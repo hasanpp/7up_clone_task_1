@@ -1,8 +1,18 @@
-.large {
+
+.large::-webkit-scrollbar{
+    display: none;
+}
+.large{
     width: 121px;
     margin-top: 3px;
     margin-left: 17px;
     z-index: 5;
+}
+.small{
+    width: 96.8px;
+    margin-top: 3px;
+    margin-left: 17px;
+    z-index: 0;
 }
 
 .navbar-h {
@@ -78,21 +88,26 @@ li{
     font-size: 20px;
     font-weight: bold;
     text-decoration: solid;
-    animation: moveToRight 2s ease-in-out;
+    background: linear-gradient(to right, #009e5f 50%, white 0%);
+    background-size: 200% 100%;
+    background-position: right ;
+    transition: all 200ms ease;
+    
 }
 
 .hi:hover .butten{
     margin-left: 135px;
     display: inline-block;
     border: 3px solid #009E5F;
-    color: #ffffff;
-    background-color: #009E5F;
+    color: #fff;
     margin-top: 3px;
     font-weight: 700;
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: solid;
+    transition: all 200ms ease;
+    background-position: left ;
 }
 .first_b{
     margin-top: -4px;
@@ -107,28 +122,32 @@ li{
 
 .button_g{
     display: inline-block;
-    border: 3px solid #ffffff;
+    border: none;
     color: #009e5f;
-    background-color: #ffffff;
     margin-top: 3px;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 22px 20px;
     font: 20px Nobel,Helvetica,Ariat,sans-serif;
     font-weight: bold;
     text-decoration: solid;
+    background: linear-gradient(to right, #009e5f 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right ;
+    transition: all 200ms ease;
 }
 
 .button_g:hover{
     display: inline-block;
     border: #009e5f;
     color: #ffffff;
-    background-color: #009e5f;
     margin-top: 3px;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 22px 20px;
     font: 20px Nobel,Helvetica,Ariat,sans-serif;
     font-weight: bold;
     text-decoration: solid;
+    transition: all 200ms ease;
+    background-position: left ;
 }
 .texts {
     margin-top: -705px;
@@ -155,7 +174,7 @@ li{
     margin-top: 350px;
 }
 .thrh {
-    height: 590px;
+    height: 690px;
     align-content: center;
     
 }
